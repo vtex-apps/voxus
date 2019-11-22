@@ -1,9 +1,9 @@
 {
-  "name": "CHANGEME",
+  "name": "voxus",
   "vendor": "vtex",
   "version": "0.0.1",
-  "title": "CHANGEME",
-  "description": "CHANGEME",
+  "title": "voxus",
+  "description": "voxus",
   "billingOptions": {
     "termsURL": "",
     "support": {
@@ -14,18 +14,19 @@
   "builders": {
     "react": "3.x",
     "store": "0.x",
-    "pixel": "0.x"
+    "pixel": "0.x",
+    "docs": "0.x"
   },
   "dependencies": {
     "vtex.pixel-interfaces": "1.x"
   },
   "settingsSchema": {
-    "title": "APP NAME",
+    "title": "Voxus",
     "type": "object",
     "properties": {
-      "gtmId": {
-        "title": "SAMPLE FIELD",
-        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
+      "voxusId": {
+        "title": "Voxus key",
+        "description": "Enter your voxus id",
         "type": "string"
       }
     }

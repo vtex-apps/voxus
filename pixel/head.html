@@ -1,11 +1,14 @@
-<script>
-  (function() {
-    var appId = "{{settings.gtmId}}";
-    if (!appId) {
-      console.error('Warning: No APP NAME ID is defined. Please configure it in the apps admin.');
-      return
-    }
-
-    // Add script here
-  })()
+<script type="text/javascript">
+  (function (window) {
+      var voxusId = "{{settings.voxusId}}";
+      if (voxusId) {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.async = true;
+          script.src = `//voxus-targeting-voxusmidia.netdna-ssl.com/${voxusId}.js`;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(script, s);
+          window.voxusId = voxusId;
+      }
+  })(window);
 </script>
