@@ -11,6 +11,9 @@
     },
     "free": true
   },
+  "scripts": {
+    "postreleasy": "vtex publish"
+  },
   "builders": {
     "react": "3.x",
     "store": "0.x",
